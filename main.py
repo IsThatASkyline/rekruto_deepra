@@ -5,7 +5,7 @@ app = FastAPI()
 
 
 @app.get("/", response_class=HTMLResponse)
-async def index(name: str, message: str):
+async def index(name: str = 'Пользователь', message: str = 'Перейдите на /docs для просмотра документации'):
     return f"""
     <html>
         <head>
