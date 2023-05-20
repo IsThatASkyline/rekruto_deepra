@@ -23,5 +23,5 @@ uvicorn main:app --reload
 либо, используя docker
 ```
 docker build -t rekruto .
-docker run rekruto
+docker run -p 8000:8000 rekruto
 ```
